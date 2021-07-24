@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoList</title>
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="css/todo.css" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Script js -->
+    <script defer src="js/todo.js"></script>
+</head>
+
+<h1 class="title">My TodoList</h1>
+
+<div class="all-tasks">
+    <h2 class="task-list-title">My List</h2>
+    <ul class="task-list" data-lists>
+      <!--   <li class="list-name active-list">Learning</li>
+        <li class="list-name">Reading Book</li>
+        <li class="list-name">Play Game</li> -->
+    </ul>
+
+    <form action="" data-new-list-form>
+        <input type="text" class="new list" data-new-list-input placeholder="new list name" arial-label="new list name" />
+        <button class="btn create" arial-label="create new list">+</button>
+    </form>
+</div>
+
+<div class="todo-list" data-list-display-container>
+    <div class="todo-header">
+        <h2 class="list-title" data-list-title>Learning</h2>
+        <p class="task-count" data-list-count>3 tasks reamining</p>
+    </div>
+
+    <div class="todo-body">
+        <div class="tasks" data-tasks></div>
+            
+            <div class="task">
+                <input type="checkbox" id="task-1" />
+                <label for="task-1">
+              <span class="custom-checkbox"></span>
+              Learning JavaScript Tutorial
+            </label>
+            </div>
+           
+
+            <div class="task">
+                <input type="checkbox" id="task-2" />
+                <label for="task-2">
+              <span class="custom-checkbox"></span>
+              Video Holiday Bali
+            </label>
+            </div>
+            
+
+            <div class="task">
+                <input type="checkbox" id="task-3" />
+                <label for="task-3">
+              <span class="custom-checkbox"></span>
+              Workout To Home
+            </label>
+            </div>
+
+            <div class="new-task-creator">
+                <form action="" data-new-task-form>
+                    <input type="text" data-new-task-input class="new task" placeholder="new task name" arial-label="new task name" />
+                    <button class="btn create" arial-label="create new task">+</button>
+                </form>
+            </div>
+            <div class="delete-stuff">
+                <button class="btn delete" data-clear-complete-button>Clear completed tasks</button>
+                <button class="btn delete" data-delete-list-button>Delete list</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- <template id="task-template">
+    <div class="task">
+        <input type="checkbox" />
+        <label>
+            <span class="custom-checkbox"></span>
+        </label>
+    </div>
+</template> -->
+</body>
+
+</html>
